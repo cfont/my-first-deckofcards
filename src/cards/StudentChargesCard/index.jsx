@@ -49,10 +49,10 @@ const StudentChargesCard = props => {
 
     return (
         <div className={classes.card}>
-            {studentCharges && studentCharges.map( building => (
-                <Fragment key={studentCharges.id}>
+            {studentCharges && studentCharges.map( studentCharge => (
+                <Fragment key={studentCharge.id}>
                     <Typography variant="body2" color="textPrimary">
-                        {studentCharges.title}
+                        {studentCharge.title}
                     </Typography>
                 </Fragment>
             ))}

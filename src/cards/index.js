@@ -10,6 +10,7 @@ import LoadingStateCard from './LoadingStateCard';
 import PreventRemoveCard from './PreventRemoveCard';
 import PropsCard from './PropsCard';
 import ThrowErrorCard from './ThrowErrorCard';
+import StudentChargesCard from './StudentChargesCard';
 
 export default [
     <BuildingsCard type="BuildingsCard"/>,
@@ -20,5 +21,7 @@ export default [
     <LoadingStateCard type="LoadingStateCard" />,
     <PreventRemoveCard type="PreventRemoveCard" />,
     <PropsCard type="PropsCard" />,
-    <ThrowErrorCard type="ThrowErrorCard" />
+    <ThrowErrorCard type="ThrowErrorCard" />,
+    <CacheCard type="CacheCard" />,
+    <StudentChargesCard type="StudentChargesCard" />
 ];

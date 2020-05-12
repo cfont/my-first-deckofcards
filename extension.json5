@@ -136,11 +136,11 @@
         "title": "Properties",
         "displayCardType": "Properties Card",
         "description": "This card displays non-function properties"
-    }], {
+    }, {
         "type": "StudentChargesCard",
         "source": "./src/cards/StudentChargesCard",
         "title": "My Charges",
-        "displayCardType": "Student Charges",
+        "displayCardType": "Student Charges Card",
         "description": "My Charges",
         "queries": {
             "list-student-charges": [
@@ -176,4 +176,5 @@
             ]
         }
     }
+    ]
 }
