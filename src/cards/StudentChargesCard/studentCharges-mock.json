@@ -4,6 +4,7 @@
       "totalCount": 23,
       "edges": [{
           "node": {
+            "id": "59f3c1d4-c5c6-4988-9988-54771fbdfae0",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -33,6 +34,7 @@
         },
         {
           "node": {
+            "id": "75bdd91b-1320-4f11-b632-e286952e2a88",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -62,6 +64,7 @@
         },
         {
           "node": {
+            "id": "9e2ccaf4-3a88-408e-928e-8e5b47447b38",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -91,6 +94,7 @@
         },
         {
           "node": {
+            "id": "f4519f9e-3462-4333-b028-ae8ce61a402b",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -120,6 +124,7 @@
         },
         {
           "node": {
+            "id": "df0974d0-8912-4f55-af2b-803fb4d455b0",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -149,6 +154,7 @@
         },
         {
           "node": {
+            "id": "697ce4e1-91f6-45e6-be57-f31a598cfc11",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -178,6 +184,7 @@
         },
         {
           "node": {
+            "id": "37c1300a-2b4c-4b32-b3fc-047e9d3fcd58",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -207,6 +214,7 @@
         },
         {
           "node": {
+            "id": "c952b50e-18c9-4874-a69c-5e9201795365",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -236,6 +244,7 @@
         },
         {
           "node": {
+            "id": "9a720552-e85f-419a-a5bc-38876018668a",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -265,6 +274,7 @@
         },
         {
           "node": {
+            "id": "a6896944-81da-4c00-b246-f44569baccfd",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -294,6 +304,7 @@
         },
         {
           "node": {
+            "id": "24b688d9-0433-4b09-a29a-e2c2d511ed7d",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -323,6 +334,7 @@
         },
         {
           "node": {
+            "id": "c8d1baf3-dcd9-450f-83aa-f11c77ba99b0",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -352,6 +364,7 @@
         },
         {
           "node": {
+            "id": "e7f6d036-7c3d-49f0-8d55-036336082124",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -381,6 +394,7 @@
         },
         {
           "node": {
+            "id": "f963f139-ad8f-45ed-b212-7a747f968221",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -410,6 +424,7 @@
         },
         {
           "node": {
+            "id": "df8d3fc9-ba40-4d49-8572-066341a667d7",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -439,6 +454,7 @@
         },
         {
           "node": {
+            "id": "0864f0f6-4d1a-4264-b704-e71f5b1d08d8",
             "chargeType": "tuition",
             "chargeableOn": "2019-09-29T04:00:00Z",
             "chargedAmount": {
@@ -468,6 +484,7 @@
         },
         {
           "node": {
+            "id": "286fdea0-6193-43b5-8d1c-9ea4e0bf8bdf",
             "chargeType": "tuition",
             "chargeableOn": "2019-08-23T04:00:00Z",
             "chargedAmount": {
@@ -497,6 +514,7 @@
         },
         {
           "node": {
+            "id": "1c605522-bff0-4d2c-b1c1-6dadc046112e",
             "chargeType": "tuition",
             "chargeableOn": "2019-08-23T04:00:00Z",
             "chargedAmount": {
@@ -526,6 +544,7 @@
         },
         {
           "node": {
+            "id": "d5a1b7de-2107-4171-a6f7-e328388a52f8",
             "chargeType": "tuition",
             "chargeableOn": "2019-08-23T04:00:00Z",
             "chargedAmount": {
@@ -555,6 +574,7 @@
         },
         {
           "node": {
+            "id": "17b32c96-e3cc-4251-80fe-32f825ef3bf5",
             "chargeType": "tuition",
             "chargeableOn": "2019-08-23T04:00:00Z",
             "chargedAmount": {
@@ -584,6 +604,7 @@
         },
         {
           "node": {
+            "id": "74b9f381-146f-4990-9e53-b52d6835d670",
             "chargeType": "fee",
             "chargeableOn": "2019-10-18T14:28:12Z",
             "chargedAmount": {
@@ -613,6 +634,7 @@
         },
         {
           "node": {
+            "id": "cb9d605d-f99f-4d37-bc38-63bad59b3465",
             "chargeType": "tuition",
             "chargeableOn": "2019-10-18T14:28:12Z",
             "chargedAmount": {
@@ -642,6 +664,7 @@
         },
         {
           "node": {
+            "id": "9c6cc929-3d1e-4655-9f20-ea8b892670b0",
             "chargeType": "fee",
             "chargeableOn": "2019-10-21T18:01:14Z",
             "chargedAmount": {
