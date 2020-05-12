@@ -1,0 +1,675 @@
+{
+  "data": {
+    "studentCharges11": {
+      "totalCount": 23,
+      "edges": [{
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 630,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -630,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 630,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -630,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 630,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -630,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 630,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -630,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 924.3,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 924.3,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -924.3,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 924.3,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -924.3,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 924.3,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -924.3,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-09-29T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 924.3,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-08-23T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -198.6,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-08-23T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -1650,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-08-23T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 1650,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-08-23T04:00:00Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -1650,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "fee",
+            "chargeableOn": "2019-10-18T14:28:12Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 150,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "LAB1-Lab Fee"
+            },
+            "fundingSource11": {
+              "title": "LAB1-Lab Fee"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "tuition",
+            "chargeableOn": "2019-10-18T14:28:12Z",
+            "chargedAmount": {
+              "amount": {
+                "value": 1626,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "fundingSource11": {
+              "title": "T101-Undergraduate Tuition"
+            },
+            "comments": null
+          }
+        },
+        {
+          "node": {
+            "chargeType": "fee",
+            "chargeableOn": "2019-10-21T18:01:14Z",
+            "chargedAmount": {
+              "amount": {
+                "value": -150,
+                "currency": "USD"
+              },
+              "unitCost": {
+                "quantity": null,
+                "cost": {
+                  "value": null,
+                  "currency": null
+                }
+              }
+            },
+            "academicPeriod16": {
+              "title": "Fall 2019"
+            },
+            "fundingDestination11": {
+              "title": "LAB1-Lab Fee"
+            },
+            "fundingSource11": {
+              "title": "LAB1-Lab Fee"
+            },
+            "comments": null
+          }
+        }
+      ]
+    }
+  }
+}

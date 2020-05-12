@@ -10,28 +10,37 @@
    2. Then, using nvm, I installed the most current version of node 10.
 7. Attempt to create-experience-extension failed because I was not on VPN and did not know I needed to be on VPN. After connecting to VPN, I was able to successfully generate my extension code directory.
 8. in the delivered extension.json5 file, the cards.source values range from including the .jsx extension to not including that extension. Is there a reason for that? suggestions? recommendations?
+9. React seems overwhelming at the moment. Still need to learn that and become comfortable with it.
+10. Definitely have to learn and become familiar with the Ellucian Path Design System.
+
+## Extension Ideas 
+
+1. BDM View My Docs cards
+2. Ethos AppConfig Status cards
+3. Student - Current Holds
+4. Student - Current charges / financial info
 
 ## Helpful VSCode Extensions
 
 ### Robert Levy
 
 * things that help with experience extensions that you might not otherwise be using:
-  * mikestead.dotenv
-  * mrmlnc.vscode-json5
+  * mikestead.dotenv - yes
+  * mrmlnc.vscode-json5 - yes
 * others I like in general that could be relevant to experience extensions:
-  * coenraads.bracket-pair-colorizer
-  * yassh.copy-with-line-numbers
-  * dbaeumer.vscode-eslint
-  * wooodhead.disable-eslint-rule
-  * ghmcadams.lintlens
-  * ms-vsliveshare.vsliveshare
-  * yzhang.markdown-all-in-one
-  * vscodeintellicode
+  * coenraads.bracket-pair-colorizer - no - yes
+  * yassh.copy-with-line-numbers - no - yes
+  * dbaeumer.vscode-eslint - yes
+  * wooodhead.disable-eslint-rule - no - yes
+  * ghmcadams.lintlens - no - yes
+  * ms-vsliveshare.vsliveshare - no
+  * yzhang.markdown-all-in-one - yes
+  * vscodeintellicode - no - yes
 
 ### Bret Hansen
 
-* msjsdiag.debugger-for-chrome
+* msjsdiag.debugger-for-chrome - no - yes
 * dbaeumer.vscode-eslint
-* znck.grammarly
-* vscodevim.vim
+* znck.grammarly - no - found github but not inside vscode
+* vscodevim.vim - no
 

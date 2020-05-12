@@ -136,5 +136,44 @@
         "title": "Properties",
         "displayCardType": "Properties Card",
         "description": "This card displays non-function properties"
-    }]
+    }], {
+        "type": "StudentChargesCard",
+        "source": "./src/cards/StudentChargesCard",
+        "title": "My Charges",
+        "displayCardType": "Student Charges",
+        "description": "My Charges",
+        "queries": {
+            "list-student-charges": [
+                {
+                    "resourceVersions": {
+                        "studentCharges": {min: 11},
+                    },
+                    "query":
+                        "{\
+                            studentCharges11\
+                            (filter: {AND:[\
+                                {student12: {id: {EQ:"92869d74-6acf-49b0-9234-4232b4e62e98"}}}\
+                                {academicPeriod16:{code:{EQ:"202010"}}}\
+                            ]})\
+                            {\
+                                totalCount\
+                                edges {\
+                                node {\
+                                    chargeType\
+                                    chargeableOn\
+                                    chargedAmount {amount{value currency} unitCost{quantity cost{value currency}}}\
+                                    academicPeriod16 {\
+                                    title\
+                                    }\
+                                    fundingDestination11{title}\
+                                    fundingSource11{title}\
+                                    comments\
+                                }\
+                                }\
+                            }\
+                        }"
+                }
+            ]
+        }
+    }
 }
