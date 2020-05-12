@@ -52,7 +52,7 @@ const StudentChargesCard = props => {
             {studentCharges && studentCharges.map( studentCharge => (
                 <Fragment key={studentCharge.id}>
                     <Typography variant="body2" color="textPrimary">
-                        {studentCharge.title}
+                        ${studentCharge.chargedAmount.amount.value} > {studentCharge.chargeType} > charged on: {studentCharge.chargeableOn}
                     </Typography>
                 </Fragment>
             ))}
