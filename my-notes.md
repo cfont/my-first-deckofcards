@@ -15,13 +15,23 @@
 11. After copying/pasting my graphql query into extension.json5 and attempting to run the mock dashboard, I get many errors about not having an extension.json file. Once I removed the query filters then I don't get the errors any longer. 
 12. Dev team suggested using the Path Table design but I still haven't learned EPDS yet. After adding import statements suggested by Bret, VSCode is giving me warnings because I'm importing hedtech/react-design-system/core many, many times.
 13. What do I need to do to update my extension sdk npm libraries? update package.json and use create switch then you'll get new sdk
-14. From A-Team meeting:
-  * Path 3.11.1 and be behind most current version of Path
-  * what does UMD mean? 
-  * Customer DPG - Life University and Catawba College
-  * June 8, the EPDS should be available to public
-  * update to sdk: graphql - range of version in config and they will choose the most appropriate version. pluralized and singularized. 
-  * Path Design documentation getting started says what they need to learn. https://design-system.10133.elluciancloud.com/#/getting-started/getting-started
+14. if I want to publish my extension to “real life” can i feel confident that I will also be able to delete/remove it if I don’t want to be embarrassed later? I know/remember there is a way to manage/upgrade versions but I cannot remember about removing/deleting. 
+    1.  yes
+15. how would I do this? 
+    1.  you can delete via the Extension Management UI. This will remove the card(s) from the Card Management table in Dashboard, as well as any users’ dashboards who had saved the card.  Also, if you “publish” an extension via the npx experience-extension upload command, you still must enable it in Setup for it to appear in Dashboard’s Card Management. Then, you must enable it and assign roles before user’s can add it. So running the publish command doesn’t immediately make it publicly available.
+16. Should I delete all of the sample cards prior to uploading my extension? 
+    1.  Yes, you should delete them, or at minimum, comment out their definitions in extensions.json5.  This way, if you want to continue to use them in your Mock dashboard, you can just remove the comments and run npm start
+17. If I delete them, what else do I need to modify? index.js (inside of src/cards)
+    1.  src/cards/index.js  doesn’t get bundled and upload. It’s only used for the Mock running locally. If you delete the sample cards, add your own, and try to run the Mock, you’ll get errors until you also delete the references to them from src/cards/index.js
+18. How do I upgrade the SDK of a current extension project? 
+    1.  asdf
+19. From A-Team meeting:
+  1. Path 3.11.1 and be behind most current version of Path
+  2. what does UMD mean? 
+  3. Customer DPG - Life University and Catawba College
+  4. June 8, the EPDS should be available to public
+  5. update to sdk: graphql - range of version in config and they will choose the most appropriate version. pluralized and singularized. 
+  6. Path Design documentation getting started says what they need to learn. https://design-system.10133.elluciancloud.com/#/getting-started/getting-started
 
 
 
