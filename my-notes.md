@@ -24,7 +24,15 @@
 17. If I delete them, what else do I need to modify? index.js (inside of src/cards)
     1.  src/cards/index.js  doesn’t get bundled and upload. It’s only used for the Mock running locally. If you delete the sample cards, add your own, and try to run the Mock, you’ll get errors until you also delete the references to them from src/cards/index.js
 18. How do I upgrade the SDK of a current extension project? 
-    1.  asdf
+    1.  question about the SDK upgrade procedure… considering that I have pre-existing code in this directory and don’t want to break that code nor do I want to create a new directory with the new SDK stuff: do I have this as an optional list of instructions:
+        1.  inside of my directory created by the initial create-experience-extension command
+        2.  npm install git+https://git.ellucian.com/scm/eee/experience-extension.git#v0.3.9 --save-dev
+        3.  and then edit the package.json peerDependencies to match the same version. There doesn’t appear to be a way to update the peer with the npm command
+        4.  then run npm install again just to finish up
+    2.  versus, or, this optional list of instructions:
+        1.  inside of my directory created by the initial create-experience-extension command
+        2.  just edit package.json and change the versions to 0.3.9 for both and run npm install :slightly_smiling_face:
+        3.  and, presume that “both” in step 2 means both instances of the property called “experience-extension” in package.json
 19. From A-Team meeting:
   1. Path 3.11.1 and be behind most current version of Path
   2. what does UMD mean? 
