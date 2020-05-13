@@ -1,9 +1,9 @@
 {
   "name": "my-first-deckofcards",
   "version": "1.0.0",
-  "description": "Description of my-first-deckofcards",
+  "description": "My First Set of Experience Extension Cards",
   "main": "index.js",
-  "license": "UNLICENSED",
+  "license": "GNU AFFERO GENERAL PUBLIC LICENSE",
   "scripts": {
     "lint": "npx eslint --ext .jsx,.js src",
     "start": "webpack-dev-server -d --config ./src/mock/webpack.config.babel.js --content-base ./src/mock --hot",
