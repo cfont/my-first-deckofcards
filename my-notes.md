@@ -12,6 +12,18 @@
 8. in the delivered extension.json5 file, the cards.source values range from including the .jsx extension to not including that extension. Is there a reason for that? suggestions? recommendations?
 9. React seems overwhelming at the moment. Still need to learn that and become comfortable with it.
 10. Definitely have to learn and become familiar with the Ellucian Path Design System.
+11. After copying/pasting my graphql query into extension.json5 and attempting to run the mock dashboard, I get many errors about not having an extension.json file. Once I removed the query filters then I don't get the errors any longer. 
+12. Dev team suggested using the Path Table design but I still haven't learned EPDS yet. After adding import statements suggested by Bret, VSCode is giving me warnings because I'm importing hedtech/react-design-system/core many, many times.
+13. What do I need to do to update my extension sdk npm libraries? update package.json and use create switch then you'll get new sdk
+14. From A-Team meeting:
+  * Path 3.11.1 and be behind most current version of Path
+  * what does UMD mean? 
+  * Customer DPG - Life University and Catawba College
+  * June 8, the EPDS should be available to public
+  * update to sdk: graphql - range of version in config and they will choose the most appropriate version. pluralized and singularized. 
+  * Path Design documentation getting started says what they need to learn. https://design-system.10133.elluciancloud.com/#/getting-started/getting-started
+
+
 
 ## Extension Ideas 
 
