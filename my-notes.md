@@ -19,6 +19,8 @@
     1.  yes
 15. how would I do this? 
     1.  you can delete via the Extension Management UI. This will remove the card(s) from the Card Management table in Dashboard, as well as any users’ dashboards who had saved the card.  Also, if you “publish” an extension via the npx experience-extension upload command, you still must enable it in Setup for it to appear in Dashboard’s Card Management. Then, you must enable it and assign roles before user’s can add it. So running the publish command doesn’t immediately make it publicly available.
+    2.  You are using words here that I can’t cross-reference with what I see on the screen: what is Dashboard’s Card Management? Is that the page I get when I click on my name in the upper right hand corner and click “Extensions” (the page that says “Extension Management”) ?
+    3.  So, after I enable it there, then I must enable it again… somewhere else… where I can potentially assign roles…? Is that where I would ideally be able to connect the Experience Setup (DEMO) site? Or, where I would normally go into my Dashboard as someone with rights to enable, create, and manage delivered card types?
 16. Should I delete all of the sample cards prior to uploading my extension? 
     1.  Yes, you should delete them, or at minimum, comment out their definitions in extensions.json5.  This way, if you want to continue to use them in your Mock dashboard, you can just remove the comments and run npm start
 17. If I delete them, what else do I need to modify? index.js (inside of src/cards)
@@ -33,7 +35,8 @@
         1.  inside of my directory created by the initial create-experience-extension command
         2.  just edit package.json and change the versions to 0.3.9 for both and run npm install :slightly_smiling_face:
         3.  and, presume that “both” in step 2 means both instances of the property called “experience-extension” in package.json
-19. From A-Team meeting:
+19. Look at .env file for updated field to upload extension to 1.10 versioned DEMO environment.
+20. From A-Team meeting:
   1. Path 3.11.1 and be behind most current version of Path
   2. what does UMD mean? 
   3. Customer DPG - Life University and Catawba College
