@@ -9,7 +9,12 @@ import {
 } from "@hedtech/react-design-system/core/styles/tokens";
 import { withStyles } from '@hedtech/react-design-system/core/styles';
 import jsonpath from 'jsonpath';
-import { getMessages } from '../../i18n/intlUtility'
+import { getMessages } from '../../i18n/intlUtility';
+import {
+    Table, TableHead, TableRow, TableCell, TableBody
+} from '@hedtech/react-design-system/core';
+import { widthFluid } from '@hedtech/react-design-system/core/styles/tokens';
+
 
 const styles = () => ({
     card: {
