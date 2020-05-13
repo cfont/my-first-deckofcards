@@ -89,3 +89,4 @@ dist
 # public
 
 src/mock/build/extension.json
+**/build/**
