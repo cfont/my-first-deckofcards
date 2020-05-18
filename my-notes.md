@@ -23,6 +23,10 @@
     3.  So, after I enable it there, then I must enable it again… somewhere else… where I can potentially assign roles…? Is that where I would ideally be able to connect the Experience Setup (DEMO) site? Or, where I would normally go into my Dashboard as someone with rights to enable, create, and manage delivered card types?
 16. Should I delete all of the sample cards prior to uploading my extension? 
     1.  Yes, you should delete them, or at minimum, comment out their definitions in extensions.json5.  This way, if you want to continue to use them in your Mock dashboard, you can just remove the comments and run npm start
+    2.  extension.json5 drives which cards get uploaded when you run the upload command, so commenting them out would prevent them from being uploaded.
+    /src/cards/index.js is the what drives which cards appear in your Mock dashboard locally.
+    So, yeah, this is a little weird. Would you ever want to keep some of those samples cards on your Mock dashboard to interact with, but not include them in the extension you upload? We could add a flag like
+    "package":"false", to extension.json5 that would allow you to do that.
 17. If I delete them, what else do I need to modify? index.js (inside of src/cards)
     1.  src/cards/index.js  doesn’t get bundled and upload. It’s only used for the Mock running locally. If you delete the sample cards, add your own, and try to run the Mock, you’ll get errors until you also delete the references to them from src/cards/index.js
 18. How do I upgrade the SDK of a current extension project? 
@@ -35,8 +39,13 @@
         1.  inside of my directory created by the initial create-experience-extension command
         2.  just edit package.json and change the versions to 0.3.9 for both and run npm install :slightly_smiling_face:
         3.  and, presume that “both” in step 2 means both instances of the property called “experience-extension” in package.json
-19. Look at .env file for updated field to upload extension to 1.10 versioned DEMO environment.
-20. From A-Team meeting:
+19. need to inventory resources needed for graphql query and need to raise error when it doesn't work to know this is the problem.
+    1.  students
+    2.  student-charges
+    3.  academic-periods
+    4.  accounting-codes
+20. Look at .env file for updated field to upload extension to 1.10 versioned DEMO environment.
+21. From A-Team meeting:
   1. Path 3.11.1 and be behind most current version of Path
   2. what does UMD mean? 
   3. Customer DPG - Life University and Catawba College
