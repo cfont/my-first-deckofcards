@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My First Set of Experience Extension Cards",
   "main": "index.js",
-  "license": "GNU AFFERO GENERAL PUBLIC LICENSE",
+  "license": "AGPL-3.0-only",
   "scripts": {
     "lint": "npx eslint --ext .jsx,.js src",
     "start": "webpack-dev-server -d --config ./src/mock/webpack.config.babel.js --content-base ./src/mock --hot",
