@@ -71,6 +71,32 @@
                 }
             ]
         }
+    }, {
+        "type": "BuildingsCard",
+        "source": "./src/cards/BuildingsCard",
+        "title": "Buildings",
+        "displayCardType": "Buildings",
+        "description": "Buildings",
+        "queries": {
+            "list-buildings": [
+                {
+                    "resourceVersions": {
+                        "buildings": {min: 6},
+                    },
+                    "query":
+                        "{ \
+                            buildings: {buildings} { \
+                                edges { \
+                                    node { \
+                                        id \
+                                        title \
+                                    } \
+                                } \
+                            } \
+                        }"
+                }
+            ]
+        }
     }
     ]
 }
