@@ -45,28 +45,23 @@
                         "studentCharges": {min: 11},
                     },
                     "query":
-                        "{\
-                            studentCharges11\
-                            (filter: {AND:[\
-                                {student12: {id: {EQ:\"92869d74-6acf-49b0-9234-4232b4e62e98\"}}}\
-                                {academicPeriod16:{code:{EQ:\"202020\"}}}\
-                            ]})\
-                            {\
-                                totalCount\
-                                edges {\
-                                node {\
-                                    chargeType\
-                                    chargeableOn\
-                                    chargedAmount {amount{value currency} unitCost{quantity cost{value currency}}}\
-                                    academicPeriod16 {\
-                                    title\
-                                    }\
-                                    fundingDestination11{title}\
-                                    fundingSource11{title}\
-                                    comments\
-                                }\
-                                }\
-                            }\
+                        "{ \
+                            studentCharges11 \
+                            (limit:10,sort:{id:ASC}) \
+                            { \
+                                edges { \
+                                    node { \
+                                        id \
+                                        chargeType \
+                                        chargeableOn \
+                                        chargedAmount { amount { value currency } unitCost { quantity cost { value currency }}} \
+                                        academicPeriod16 { title } \
+                                        fundingDestination11 { title } \
+                                        fundingSource11 { title } \
+                                        comments \
+                                    } \
+                                } \
+                            } \
                         }"
                 }
             ]
