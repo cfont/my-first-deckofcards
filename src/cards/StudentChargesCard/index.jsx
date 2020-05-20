@@ -37,11 +37,15 @@ const StudentChargesCard = props => {
             if (mock) {
                 // load mock data
                 const studentChargesData = require('./studentCharges-mock.json');
+                console.log('ethosQuery results', studentChargesData);
                 studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges11.edges..node');
+                console.log('jsonpath query results', studentCharges);
             } else {
                 try {
-                    const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges'})
+                    const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges' })
+                    console.log('ethosQuery results', studentChargesData);
                     studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges11.edges..node');
+                    console.log('jsonpath query results', studentCharges);
                 } catch (error) {
                     console.log('ethosQuery failed', error);
                 }
@@ -54,6 +58,7 @@ const StudentChargesCard = props => {
 
     return (
         <div className={classes.card}>
+            <p>Testing</p>
             {studentCharges && studentCharges.map( studentCharge => (
                 <Fragment key={studentCharge.id}>
                     <Typography variant="body2" color="textPrimary">
