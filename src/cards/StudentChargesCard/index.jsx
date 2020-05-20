@@ -14,6 +14,7 @@ import {
     Table, TableHead, TableRow, TableCell, TableBody
 } from '@hedtech/react-design-system/core';
 import { widthFluid } from '@hedtech/react-design-system/core/styles/tokens';
+import 'moment';
 
 
 const styles = () => ({
@@ -62,7 +63,7 @@ const StudentChargesCard = props => {
             {studentCharges && studentCharges.map( studentCharge => (
                 <Fragment key={studentCharge.id}>
                     <Typography variant="body2" color="textPrimary">
-                        ${studentCharge.chargedAmount.amount.value} > {studentCharge.chargeType} > charged on: {studentCharge.chargeableOn}
+                        ${studentCharge.chargedAmount.amount.value} > {studentCharge.chargeType} > charged on: moment({studentCharge.chargeableOn},"MM-DD-YYYY")
                     </Typography>
                 </Fragment>
             ))}
