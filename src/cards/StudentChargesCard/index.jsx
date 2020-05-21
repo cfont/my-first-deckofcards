@@ -73,7 +73,7 @@ const StudentChargesCard = props => {
                                 <TableCell columnName="Type">
                                     {studentCharge.chargeType}
                                 </TableCell>
-                                <TableCell columnName="Amount" align="right">
+                                <TableCell columnName="Amount ($)" align="right">
                                     {studentCharge.chargedAmount.amount.value}
                                 </TableCell>
                             </TableRow>
