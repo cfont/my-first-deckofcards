@@ -52,6 +52,7 @@
                                 {academicPeriod16:{code:{EQ: \"202020\"}}} \
                             ]}) \
                             { \
+                                totalCount \
                                 edges { \
                                     node { \
                                         id \
