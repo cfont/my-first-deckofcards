@@ -61,12 +61,12 @@ const StudentChargesCard = props => {
                         <TableRow>
                             <TableCell>Date</TableCell>
                             <TableCell>Type</TableCell>
-                            <TableCell align="right">Amount</TableCell>
+                            <TableCell align="right">Amount ($)</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
                         {studentCharges && studentCharges.map(studentCharge => (
-                            <TableRow key={studentCharge.id}>
+                            <TableRow key={studentCharge.id} hover='true'>
                                 <TableCell columnName="Date">
                                     {moment(studentCharge.chargeableOn).calendar()}
                                 </TableCell>
@@ -74,7 +74,7 @@ const StudentChargesCard = props => {
                                     {studentCharge.chargeType}
                                 </TableCell>
                                 <TableCell columnName="Amount" align="right">
-                                    ${studentCharge.chargedAmount.amount.value}
+                                    {studentCharge.chargedAmount.amount.value}
                                 </TableCell>
                             </TableRow>
                         ))}
