@@ -26,7 +26,7 @@ const StudentChargesCard = props => {
         (async () => {
             setLoadingStatus(true);
 
-            // load the buildings
+            // load the student-charges
             let studentCharges = [];
 
             if (mock) {
@@ -57,7 +57,7 @@ const StudentChargesCard = props => {
             {studentCharges && studentCharges.map( studentCharge => (
                 <Fragment key={studentCharge.id}>
                     <Typography variant="body2" color="textPrimary">
-                        ${studentCharge.chargedAmount.amount.value} > {studentCharge.chargeType} > charged on: {studentCharge.chargeableOn}
+                        ${studentCharge.chargedAmount.amount.value} > {studentCharge.chargeType} > charged on: {moment(studentCharge.chargeableOn).calendar()}
                     </Typography>
                 </Fragment>
             ))}
