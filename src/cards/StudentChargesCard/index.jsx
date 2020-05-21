@@ -53,14 +53,34 @@ const StudentChargesCard = props => {
 
     return (
         <div className={classes.card}>
-            <p>Testing</p>
-            {studentCharges && studentCharges.map( studentCharge => (
-                <Fragment key={studentCharge.id}>
-                    <Typography variant="body2" color="textPrimary">
-                        ${studentCharge.chargedAmount.amount.value} > {studentCharge.chargeType} > charged on: {moment(studentCharge.chargeableOn).calendar()}
-                    </Typography>
-                </Fragment>
-            ))}
+            <Typography gutterBottom>The following charges have been found on your account:</Typography>
+            <br />
+            <div id='My_Table' className={classes.root}>
+                <Table className={classes.table} layout={{ variant: 'card', breakpoint: 'sm' }}>
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>Date</TableCell>
+                            <TableCell>Type</TableCell>
+                            <TableCell align="right">Amount</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {studentCharges && studentCharges.map(studentCharge => (
+                            <TableRow key={studentCharge.id}>
+                                <TableCell columnName="Date">
+                                    {moment(studentCharge.chargeableOn).calendar()}
+                                </TableCell>
+                                <TableCell columnName="Type">
+                                    {studentCharge.chargeType}
+                                </TableCell>
+                                <TableCell columnName="Amount" align="right">
+                                    ${studentCharge.chargedAmount.amount.value}
+                                </TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+            </div>
         </div>
     )
 }
