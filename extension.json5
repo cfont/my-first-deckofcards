@@ -45,9 +45,12 @@
                         "studentCharges": {min: 11},
                     },
                     "query":
-                        "{ \
+                        "query getStudentCharges($personId: ID){ \
                             studentCharges11 \
-                            (limit:10,sort:{id:ASC}) \
+                            (filter: {AND:[ \
+                                {student12: {id: {EQ: $personId }}} \
+                                {academicPeriod16:{code:{EQ: \"202020\"}}} \
+                            ]}) \
                             { \
                                 edges { \
                                     node { \
