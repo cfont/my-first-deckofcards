@@ -1,6 +1,6 @@
 {
   "name": "my-first-deckofcards",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "My First Set of Experience Extension Cards",
   "main": "index.js",
   "license": "AGPL-3.0-only",
