@@ -18,7 +18,7 @@ const styles = () => ({
 });
 
 const StudentChargesCard = props => {
-    const { classes, cardControl: {setLoadingStatus}, data: {getEthosQuery}, mock = false } = props;
+    const { classes, cardControl: {setLoadingStatus}, data: {getEthosQuery}, mock = false, intl } = props;
 
     const [studentCharges, setStudentCharges] = useState();
 
@@ -68,7 +68,7 @@ const StudentChargesCard = props => {
                         {studentCharges && studentCharges.map(studentCharge => (
                             <TableRow key={studentCharge.id} hover='true'>
                                 <TableCell columnName="Date">
-                                    {moment(studentCharge.chargeableOn).calendar()}
+                                    {moment(studentCharge.chargeableOn).locale(intl.locale).format("MMM Do\, YYYY")}
                                 </TableCell>
                                 <TableCell columnName="Type">
                                     {studentCharge.chargeType}
@@ -91,7 +91,7 @@ StudentChargesCard.propTypes = {
     data: PropTypes.object.isRequired
 };
 
-const CardBody = injectIntl(StudentChargesCard);
+const CardBody = injectIntl(withStyles(styles)(StudentChargesCard));
 
 const CardWrapper = props => {
     const { userInfo: {locale} } = props;
