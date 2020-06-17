@@ -18,7 +18,7 @@ const styles = () => ({
 });
 
 const StudentChargesCard = props => {
-    const { classes, cardControl: {setLoadingStatus}, data: {getEthosQuery}, mock = false } = props;
+    const { classes, cardInfo: { configuration }, cardControl: {setLoadingStatus}, data: {getEthosQuery}, mock = false } = props;
 
     const [studentCharges, setStudentCharges] = useState();
 
@@ -35,9 +35,11 @@ const StudentChargesCard = props => {
                 console.log('ethosQuery results', studentChargesData);
                 studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges11.edges..node');
                 console.log('jsonpath query results', studentCharges);
+                console.log('academicPeriodCode: ', configuration.myChargesAcademicPeriod);
             } else {
                 try {
-                    const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges' })
+                    console.log('academicPeriodCode: ', configuration.myChargesAcademicPeriod);
+                    const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges', properties: { 'academicPeriodCode': configuration.myChargesAcademicPeriod } })
                     console.log('ethosQuery results', studentChargesData);
                     studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges11.edges..node');
                     console.log('jsonpath query results', studentCharges);
@@ -88,7 +90,8 @@ const StudentChargesCard = props => {
 StudentChargesCard.propTypes = {
     cardControl: PropTypes.object.isRequired,
     classes: PropTypes.object.isRequired,
-    data: PropTypes.object.isRequired
+    data: PropTypes.object.isRequired,
+    cardInfo: PropTypes.object.isRequired
 };
 
 const CardBody = injectIntl(StudentChargesCard);
