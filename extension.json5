@@ -27,7 +27,7 @@
                             studentCharges11 \
                             (filter: {AND:[ \
                                 {student12: {id: {EQ: $personId }}} \
-                                {academicPeriod16:{code:{EQ: $cards[].configuration.client[].myChargesAcademicPeriod}}} \
+                                {academicPeriod16:{code:{EQ: $academicPeriodCode}}} \
                             ]}) \
                             { \
                                 totalCount \
