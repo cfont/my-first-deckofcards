@@ -2,42 +2,20 @@
     "name": "my-first-deckofcards",
     "publisher": "Ellucian",
     "product": "Demo",
-    "configuration": {
-        "client": [{
-            "key": "extension-client-url",
-            "label": "extension client url",
-            "type": "url",
-            "required": true
-        }, {
-            "key": "extension-client-text",
-            "label": "extension client text",
-            "type": "text"
-        }, {
-            "key": "extension-client-password",
-            "label": "extension client password",
-            "type": "password"
-        }],
-        "server": [{
-            "key": "extension-server-url",
-            "label": "extension server url",
-            "type": "url",
-            "required": true
-        }, {
-            "key": "extension-server-text",
-            "label": "extension server text",
-            "type": "text"
-        }, {
-            "key": "extension-server-password",
-            "label": "extension server password",
-            "type": "password"
-        }]
-    },
     "cards": [ {
         "type": "StudentChargesCard",
         "source": "./src/cards/StudentChargesCard",
         "title": "My Charges",
         "displayCardType": "Student Charges Card",
         "description": "My Charges",
+        "configuration": {
+            "client": [{
+                "key": "myChargesAcademicPeriod",
+                "label": "Academic Period",
+                "type": "text",
+                "required": true
+            }]
+        },
         "queries": {
             "list-student-charges": [
                 {
@@ -45,11 +23,11 @@
                         "studentCharges": {min: 11},
                     },
                     "query":
-                        "query getStudentCharges($personId: ID){ \
+                        "query getStudentCharges($personId: ID, $academicPeriodCode: String){ \
                             studentCharges11 \
                             (filter: {AND:[ \
                                 {student12: {id: {EQ: $personId }}} \
-                                {academicPeriod16:{code:{EQ: \"202020\"}}} \
+                                {academicPeriod16:{code:{EQ: $academicPeriodCode}}} \
                             ]}) \
                             { \
                                 totalCount \
