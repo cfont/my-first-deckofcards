@@ -23,7 +23,7 @@
                         "studentCharges": {min: 11},
                     },
                     "query":
-                        "query getStudentCharges($personId: ID){ \
+                        "query getStudentCharges($personId: ID, $academicPeriodCode: String){ \
                             studentCharges11 \
                             (filter: {AND:[ \
                                 {student12: {id: {EQ: $personId }}} \
