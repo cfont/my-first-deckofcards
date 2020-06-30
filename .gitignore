@@ -91,3 +91,4 @@ dist
 src/mock/build/extension.json
 **/build/**
 **/myNotes/**
+**/.DS_Store
