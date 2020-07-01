@@ -50,7 +50,8 @@ const StudentChargesCard = props => {
             } else {
                 try {
                     console.log('academicPeriodCode: ', configuration.myChargesAcademicPeriod);
-                    const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges', properties: { 'academicPeriodCodes': getAcademicPeriods } })
+                    console.log('config getter: ', getAcademicPeriods(configuration));
+                    const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges', properties: { 'academicPeriodCodes': getAcademicPeriods(configuration) } })
                     console.log('ethosQuery results', studentChargesData);
                     studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges11.edges..node');
                     console.log('jsonpath query results', studentCharges);
