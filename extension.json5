@@ -27,10 +27,10 @@
                     },
                     "query":
                         "query getStudentCharges($personId: ID, $academicPeriodCode: String){ \
-                            studentCharges11 \
+                            studentCharges : {studentCharges} \
                             (filter: {AND:[ \
-                                {student12: {id: {EQ: $personId }}} \
-                                {academicPeriod16:{code:{EQ: $academicPeriodCode}}} \
+                                {{student}: {id: {EQ: $personId }}} \
+                                {{academicPeriods}:{code:{EQ: $academicPeriodCode}}} \
                             ]}) \
                             { \
                                 totalCount \
@@ -40,9 +40,9 @@
                                         chargeType \
                                         chargeableOn \
                                         chargedAmount { amount { value currency } unitCost { quantity cost { value currency }}} \
-                                        academicPeriod16 { title } \
-                                        fundingDestination11 { title } \
-                                        fundingSource11 { title } \
+                                        academicPeriod: {academicPeriod} { title } \
+                                        fundingDestination: {fundingDestination@accountingCodes} { title } \
+                                        fundingSource: {fundingSource@accountingCodes} { title } \
                                         comments \
                                     } \
                                 } \
