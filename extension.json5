@@ -11,7 +11,7 @@
         "configuration": {
             "client": [{
                 "key": "myChargesAcademicPeriod",
-                "label": "Academic Period",
+                "label": "Academic Period(s), comma-separated",
                 "type": "text",
                 "required": true
             }]
@@ -25,11 +25,11 @@
                         "academicPeriods": {min: 16}
                     },
                     "query":
-                        "query getStudentCharges($personId: ID, $academicPeriodCode: String){ \
+                        "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
                             studentCharges : {studentCharges} \
                             (filter: {AND:[ \
                                 {{student}: {id: {EQ: $personId }}} \
-                                {{academicPeriods}:{code:{EQ: $academicPeriodCode}}} \
+                                {{academicPeriods}:{code:{IN: $academicPeriodCodes}}} \
                             ]}) \
                             { \
                                 totalCount \
