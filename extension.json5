@@ -20,7 +20,7 @@
             "list-student-charges": [
                 {
                     "resourceVersions": {
-                        "studentCharges": {min: 11},
+                        "studentCharges": {min: 16},
                         "students": {min: 12},
                         "academicPeriods": {min: 16},
                         "accountingCodes": {min: 11},
@@ -37,13 +37,10 @@
                                 edges { \
                                     node { \
                                         id \
-                                        chargeType \
                                         chargeableOn \
-                                        chargedAmount { amount { value currency } unitCost { quantity cost { value currency }}} \
+                                        chargedAmount { amount { value currency } } \
                                         academicPeriod: {academicPeriod} { title } \
-                                        fundingDestination: {fundingDestination@accountingCodes} { title } \
-                                        fundingSource: {fundingSource@accountingCodes} { title } \
-                                        comments \
+                                        overrideDescription \
                                     } \
                                 } \
                             } \
