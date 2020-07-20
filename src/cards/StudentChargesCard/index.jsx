@@ -22,6 +22,17 @@ const StudentChargesCard = props => {
 
     const [studentCharges, setStudentCharges] = useState();
 
+    const getAcademicPeriods = (configuration) => {
+        if (configuration && configuration.myChargesAcademicPeriod) {
+            const academicPeriodsString = configuration.myChargesAcademicPeriod;
+            const academicPeriods = academicPeriodsString.split(',');
+            const trimmed = academicPeriods.map(x => x.trim());
+            return trimmed;
+        } else {
+            return [];
+        }
+    };
+
     useEffect(() => {
         (async () => {
             setLoadingStatus(true);
@@ -39,7 +50,8 @@ const StudentChargesCard = props => {
             } else {
                 try {
                     console.log('academicPeriodCode: ', configuration.myChargesAcademicPeriod);
-                    const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges', properties: { 'academicPeriodCode': configuration.myChargesAcademicPeriod } })
+                    console.log('config getter: ', getAcademicPeriods(configuration));
+                    const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges', properties: { 'academicPeriodCode': getAcademicPeriods(configuration) } })
                     console.log('ethosQuery results', studentChargesData);
                     studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges.edges..node');
                     console.log('jsonpath query results', studentCharges);
