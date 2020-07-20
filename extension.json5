@@ -21,15 +21,15 @@
                 {
                     "resourceVersions": {
                         "studentCharges": {min: 16},
-                        "students": {min: 12},
-                        "academicPeriods": {min: 16}
+                        "student": {min: 12},
+                        "academicPeriod": {min: 16}
                     },
                     "query":
                         "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
                             studentCharges : {studentCharges} \
                             (filter: {AND:[ \
                                 {{student}: {id: {EQ: $personId }}} \
-                                {{academicPeriods}:{code:{IN: $academicPeriodCodes}}} \
+                                {{academicPeriod}:{code:{IN: $academicPeriodCodes}}} \
                             ]}) \
                             { \
                                 totalCount \
