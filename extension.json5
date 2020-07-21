@@ -37,7 +37,7 @@
                                         chargeableOn \
                                         chargedAmount { amount { value currency }} \
                                         academicPeriod16 { title } \
-                                        comments \
+                                        overrideDescription \
                                     } \
                                 } \
                             } \
