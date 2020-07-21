@@ -53,7 +53,7 @@ const StudentChargesCard = props => {
                     console.log('config getter: ', getAcademicPeriods(configuration));
                     const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges', properties: { 'academicPeriodCodes': getAcademicPeriods(configuration) } })
                     console.log('ethosQuery results', studentChargesData);
-                    studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges11.edges..node');
+                    studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges16.edges..node');
                     console.log('jsonpath query results', studentCharges);
                 } catch (error) {
                     console.log('ethosQuery failed', error);
@@ -74,7 +74,7 @@ const StudentChargesCard = props => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Date</TableCell>
-                            <TableCell>Type</TableCell>
+                            <TableCell>Description</TableCell>
                             <TableCell align="right">Amount ($)</TableCell>
                         </TableRow>
                     </TableHead>
@@ -84,8 +84,8 @@ const StudentChargesCard = props => {
                                 <TableCell columnName="Date">
                                     {moment(studentCharge.chargeableOn).calendar()}
                                 </TableCell>
-                                <TableCell columnName="Type">
-                                    {studentCharge.chargeType}
+                                <TableCell columnName="Description">
+                                    {studentCharge.overrideDescription}
                                 </TableCell>
                                 <TableCell columnName="Amount ($)" align="right">
                                     {studentCharge.chargedAmount.amount.value}

@@ -24,7 +24,7 @@
                     },
                     "query":
                         "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
-                            studentCharges11 \
+                            studentCharges16 \
                             (filter: {AND:[ \
                                 {student12: {id: {EQ: $personId }}} \
                                 {academicPeriod16:{code:{IN: $academicPeriodCodes}}} \
@@ -34,13 +34,10 @@
                                 edges { \
                                     node { \
                                         id \
-                                        chargeType \
                                         chargeableOn \
-                                        chargedAmount { amount { value currency } unitCost { quantity cost { value currency }}} \
+                                        chargedAmount { amount { value currency }} \
                                         academicPeriod16 { title } \
-                                        fundingDestination11 { title } \
-                                        fundingSource11 { title } \
-                                        comments \
+                                        overrideDescription \
                                     } \
                                 } \
                             } \
