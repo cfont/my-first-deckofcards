@@ -20,14 +20,17 @@
             "list-student-charges": [
                 {
                     "resourceVersions": {
-                        "studentCharges": {min: 11},
+                        "studentCharges": {min: 16},
+                        "students": {min: 12},
+                        "persons": {min:12},
+                        "academicPeriods": {min: 16}
                     },
                     "query":
                         "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
-                            studentCharges16 \
+                            studentCharges : {studentCharges} \
                             (filter: {AND:[ \
-                                {student12: {id: {EQ: $personId }}} \
-                                {academicPeriod16:{code:{IN: $academicPeriodCodes}}} \
+                                {{student@persons}: {id: {EQ: $personId }}} \
+                                {{academicPeriod}:{code:{IN: $academicPeriodCodes}}} \
                             ]}) \
                             { \
                                 totalCount \
@@ -35,8 +38,8 @@
                                     node { \
                                         id \
                                         chargeableOn \
-                                        chargedAmount { amount { value currency }} \
-                                        academicPeriod16 { title } \
+                                        chargedAmount { amount { value currency } } \
+                                        academicPeriod: {academicPeriod} { title } \
                                         overrideDescription \
                                     } \
                                 } \

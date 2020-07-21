@@ -44,7 +44,7 @@ const StudentChargesCard = props => {
                 // load mock data
                 const studentChargesData = require('./studentCharges-mock.json');
                 console.log('ethosQuery results', studentChargesData);
-                studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges16.edges..node');
+                studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges.edges..node');
                 console.log('jsonpath query results', studentCharges);
                 console.log('academicPeriodCode: ', configuration.myChargesAcademicPeriod);
             } else {
@@ -53,7 +53,7 @@ const StudentChargesCard = props => {
                     console.log('config getter: ', getAcademicPeriods(configuration));
                     const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges', properties: { 'academicPeriodCodes': getAcademicPeriods(configuration) } })
                     console.log('ethosQuery results', studentChargesData);
-                    studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges16.edges..node');
+                    studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges.edges..node');
                     console.log('jsonpath query results', studentCharges);
                 } catch (error) {
                     console.log('ethosQuery failed', error);

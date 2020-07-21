@@ -1,6 +1,6 @@
 {
   "data": {
-    "studentCharges16": {
+    "studentCharges": {
       "totalCount": 38,
       "edges": [{
           "node": {
@@ -12,7 +12,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -28,7 +28,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -44,7 +44,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -60,7 +60,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -76,7 +76,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -92,7 +92,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -108,7 +108,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -124,7 +124,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -140,7 +140,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -156,7 +156,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -172,7 +172,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -188,7 +188,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -204,7 +204,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Lab Fee"
@@ -220,7 +220,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -236,7 +236,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Lab Fee"
@@ -252,7 +252,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -268,7 +268,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -284,7 +284,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -300,7 +300,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -316,7 +316,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -332,7 +332,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -348,7 +348,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -364,7 +364,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Fall 2019"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -380,7 +380,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Student Activities Fee"
@@ -396,7 +396,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Technology Fee"
@@ -412,7 +412,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Housing"
@@ -428,7 +428,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Meal"
@@ -444,7 +444,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -460,7 +460,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Student Activities Fee"
@@ -476,7 +476,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Technology Fee"
@@ -492,7 +492,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Housing"
@@ -508,7 +508,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Meal"
@@ -524,7 +524,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -540,7 +540,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -556,7 +556,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -572,7 +572,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -588,7 +588,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Undergraduate Tuition"
@@ -604,7 +604,7 @@
                 "currency": "USD"
               }
             },
-            "academicPeriod16": {
+            "academicPeriod": {
               "title": "Spring 2020"
             },
             "overrideDescription": "Undergraduate Tuition"
