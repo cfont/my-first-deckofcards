@@ -11,7 +11,7 @@
         "configuration": {
             "client": [{
                 "key": "myChargesAcademicPeriod",
-                "label": "Academic Period(s), comma-separated",
+                "label": "Academic period(s), comma-separated",
                 "type": "text",
                 "required": true
             }]
