@@ -44,7 +44,7 @@ const StudentChargesCard = props => {
                 // load mock data
                 const studentChargesData = require('./studentCharges-mock.json');
                 console.log('ethosQuery results', studentChargesData);
-                studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges11.edges..node');
+                studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges16.edges..node');
                 console.log('jsonpath query results', studentCharges);
                 console.log('academicPeriodCode: ', configuration.myChargesAcademicPeriod);
             } else {
