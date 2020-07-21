@@ -24,7 +24,7 @@
                     },
                     "query":
                         "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
-                            studentCharges11 \
+                            studentCharges16 \
                             (filter: {AND:[ \
                                 {student12: {id: {EQ: $personId }}} \
                                 {academicPeriod16:{code:{IN: $academicPeriodCodes}}} \
