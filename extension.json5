@@ -34,7 +34,6 @@
                                 edges { \
                                     node { \
                                         id \
-                                        chargeType \
                                         chargeableOn \
                                         chargedAmount { amount { value currency } unitCost { quantity cost { value currency }}} \
                                         academicPeriod16 { title } \
