@@ -67,7 +67,7 @@ const StudentChargesCard = props => {
 
     return (
         <div className={classes.card}>
-            <Typography gutterBottom>The following charges have been found on your account:</Typography>
+            <Typography gutterBottom>The following charges have been found on your account (HI):</Typography>
             <br />
             <div id='My_Table' className={classes.root}>
                 <Table className={classes.table} layout={{ variant: 'card', breakpoint: 'sm' }}>
