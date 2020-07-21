@@ -74,7 +74,7 @@ const StudentChargesCard = props => {
                     <TableHead>
                         <TableRow>
                             <TableCell>Date</TableCell>
-                            <TableCell>Type</TableCell>
+                            <TableCell>Description</TableCell>
                             <TableCell align="right">Amount ($)</TableCell>
                         </TableRow>
                     </TableHead>
@@ -84,8 +84,8 @@ const StudentChargesCard = props => {
                                 <TableCell columnName="Date">
                                     {moment(studentCharge.chargeableOn).calendar()}
                                 </TableCell>
-                                <TableCell columnName="Type">
-                                    {studentCharge.chargeType}
+                                <TableCell columnName="Description">
+                                    {studentCharge.overrideDescription}
                                 </TableCell>
                                 <TableCell columnName="Amount ($)" align="right">
                                     {studentCharge.chargedAmount.amount.value}
