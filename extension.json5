@@ -21,8 +21,8 @@
                 {
                     "resourceVersions": {
                         "studentCharges": {min: 16},
-                        "student": {min: 12},
-                        "academicPeriod": {min: 16}
+                        "students": {min: 12},
+                        "academicPeriods": {min: 16}
                     },
                     "query":
                         "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
