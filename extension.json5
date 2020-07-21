@@ -28,8 +28,8 @@
                         "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
                             studentCharges : {studentCharges} \
                             (filter: {AND:[ \
-                                {{student}: {id: {EQ: $personId }}} \
-                                {{academicPeriod}:{code:{IN: $academicPeriodCodes}}} \
+                                {student12: {id: {EQ: $personId }}} \
+                                {academicPeriod16:{code:{IN: $academicPeriodCodes}}} \
                             ]}) \
                             { \
                                 totalCount \
