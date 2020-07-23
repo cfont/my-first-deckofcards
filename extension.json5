@@ -24,7 +24,6 @@
                         "students": {min: 12},
                         "persons": {min:12},
                         "academicPeriods": {min: 16},
-                        "fundingDestination": {min: 11},
                         "accountingCodes": {min: 11}
                     },
                     "query":
@@ -43,7 +42,7 @@
                                         chargedAmount { amount { value currency } } \
                                         academicPeriod: {academicPeriod} { title } \
                                         overrideDescription \
-                                        fundingDestination: {fundingDestination@accountingCodes} {title} \
+                                        fundingDestination: {fundingDestination@accountingCodes} { title } \
                                     } \
                                 } \
                             } \
