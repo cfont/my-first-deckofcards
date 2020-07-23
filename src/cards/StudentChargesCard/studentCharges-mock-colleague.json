@@ -1,0 +1,160 @@
+{
+  "data": {
+    "studentCharges": {
+      "totalCount": 8,
+      "edges": [{
+          "node": {
+            "id": "61393248-2a4f-4ce9-9de8-0a33d8f3a6e7",
+            "chargeableOn": "2019-05-23T00:00:00",
+            "chargedAmount": {
+              "amount": {
+                "value": 34,
+                "currency": "USD"
+              }
+            },
+            "academicPeriod": {
+              "title": "2020 Spring Session"
+            },
+            "overrideDescription": null,
+            "fundingDestination": {
+              "title": "Parking Permit Fee"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "992d73d3-9751-4e57-acb0-49234df5e746",
+            "chargeableOn": "2020-01-31T00:00:00",
+            "chargedAmount": {
+              "amount": {
+                "value": 40,
+                "currency": "USD"
+              }
+            },
+            "academicPeriod": {
+              "title": "2020 Spring Session"
+            },
+            "overrideDescription": null,
+            "fundingDestination": {
+              "title": "Cleaning Fee"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "6fcd46b1-fef3-44d3-83b8-65159963be50",
+            "chargeableOn": "2020-05-08T00:00:00",
+            "chargedAmount": {
+              "amount": {
+                "value": 35.89,
+                "currency": "USD"
+              }
+            },
+            "academicPeriod": {
+              "title": "2020 Spring Session"
+            },
+            "overrideDescription": null,
+            "fundingDestination": {
+              "title": "Cleaning Fee"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "a78fb23d-a18a-4340-a016-198a6b4218b5",
+            "chargeableOn": "2020-03-31T00:00:00",
+            "chargedAmount": {
+              "amount": {
+                "value": 43.18,
+                "currency": "USD"
+              }
+            },
+            "academicPeriod": {
+              "title": "2020 Spring Session"
+            },
+            "overrideDescription": null,
+            "fundingDestination": {
+              "title": "Damages"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "c275bb26-469f-4345-a126-91c094a6904d",
+            "chargeableOn": "2020-03-20T00:00:00",
+            "chargedAmount": {
+              "amount": {
+                "value": 54,
+                "currency": "USD"
+              }
+            },
+            "academicPeriod": {
+              "title": "2020 Spring Session"
+            },
+            "overrideDescription": null,
+            "fundingDestination": {
+              "title": "Parking Permit Fee"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "ef2231c1-1a34-47e4-a487-3b460ddefe76",
+            "chargeableOn": "2020-04-17T00:00:00",
+            "chargedAmount": {
+              "amount": {
+                "value": 60,
+                "currency": "USD"
+              }
+            },
+            "academicPeriod": {
+              "title": "2020 Spring Session"
+            },
+            "overrideDescription": null,
+            "fundingDestination": {
+              "title": "Cleaning Fee"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "584c0252-29f6-4d1d-a2a6-79fd791ff3a5",
+            "chargeableOn": "2020-05-01T00:00:00",
+            "chargedAmount": {
+              "amount": {
+                "value": 54.34,
+                "currency": "USD"
+              }
+            },
+            "academicPeriod": {
+              "title": "2020 Spring Session"
+            },
+            "overrideDescription": null,
+            "fundingDestination": {
+              "title": "Parking Permit Fee"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "c892a9d4-ec6f-4500-8f7a-e67c7d51803f",
+            "chargeableOn": "2020-06-28T00:00:00",
+            "chargedAmount": {
+              "amount": {
+                "value": 45.78,
+                "currency": "USD"
+              }
+            },
+            "academicPeriod": {
+              "title": "2020 Summer Session"
+            },
+            "overrideDescription": null,
+            "fundingDestination": {
+              "title": "Cleaning Fee"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -23,7 +23,8 @@
                         "studentCharges": {min: 16},
                         "students": {min: 12},
                         "persons": {min:12},
-                        "academicPeriods": {min: 16}
+                        "academicPeriods": {min: 16},
+                        "accountingCodes": {min: 11}
                     },
                     "query":
                         "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
@@ -41,6 +42,7 @@
                                         chargedAmount { amount { value currency } } \
                                         academicPeriod: {academicPeriod} { title } \
                                         overrideDescription \
+                                        fundingDestination: {fundingDestination@accountingCodes} { title } \
                                     } \
                                 } \
                             } \
