@@ -37,11 +37,11 @@ const StudentChargesCard = props => {
         if (props.overrideDescription != null) {
             // probably using Banner as source system
             return props.overrideDescription;
-        } else if(props.fundingDestination.title != null) {
+        } else if (props.fundingDestination.title != null) {
             // probably using Colleague as source system
             return props.fundingDestination.title;
         } return "";
-    }
+    };
 
     useEffect(() => {
         (async () => {
