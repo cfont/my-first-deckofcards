@@ -33,6 +33,16 @@ const StudentChargesCard = props => {
         }
     };
 
+    const showChargeDescription = props => {
+        if (props.overrideDescription != null) {
+            // probably using Banner as source system
+            return props.overrideDescription;
+        } else if(props.fundingDestination.title != null) {
+            // probably using Colleague as source system
+            return props.fundingDestination.title;
+        } return "";
+    }
+
     useEffect(() => {
         (async () => {
             setLoadingStatus(true);
@@ -41,8 +51,10 @@ const StudentChargesCard = props => {
             let studentCharges = [];
 
             if (mock) {
-                // load mock data
-                const studentChargesData = require('./studentCharges-mock.json');
+                // load mock data for Banner example
+                // const studentChargesData = require('./studentCharges-mock-banner.json');
+                // load mock data for Colleague example
+                const studentChargesData = require('./studentCharges-mock-colleague.json');
                 console.log('ethosQuery results', studentChargesData);
                 studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges.edges..node');
                 console.log('jsonpath query results', studentCharges);
@@ -85,7 +97,7 @@ const StudentChargesCard = props => {
                                     {moment(studentCharge.chargeableOn).calendar()}
                                 </TableCell>
                                 <TableCell columnName="Description">
-                                    {studentCharge.overrideDescription}
+                                    {showChargeDescription(studentCharge)}
                                 </TableCell>
                                 <TableCell columnName="Amount ($)" align="right">
                                     {studentCharge.chargedAmount.amount.value}
