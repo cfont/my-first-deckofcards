@@ -51,10 +51,14 @@ const StudentChargesCard = props => {
             let studentCharges = [];
 
             if (mock) {
-                // load mock data for Banner example
-                // const studentChargesData = require('./studentCharges-mock-banner.json');
-                // load mock data for Colleague example
-                const studentChargesData = require('./studentCharges-mock-colleague.json');
+                // load mock data for one student for "current" academic period(s) in Banner example
+                // const studentChargesData = require('./mock-studentCharges-current-banner.json');
+                // load mock data for one student for all charges in Banner example
+                const studentChargesData = require('./mock-studentCharges-all-banner.json');
+                // load mock data for one student for "current" academic period(s) in Colleague example
+                // const studentChargesData = require('./mock-studentCharges-current-colleague.json');
+                // load mock data for one student for all charges in Colleague example
+                // const studentChargesData = require('./mock-studentCharges-all-colleague.json');
                 console.log('ethosQuery results', studentChargesData);
                 studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges.edges..node');
                 console.log('jsonpath query results', studentCharges);
