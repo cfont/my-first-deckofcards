@@ -27,12 +27,9 @@
                         "accountingCodes": {min: 11}
                     },
                     "query":
-                        "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
+                        "query getStudentCharges($personId: ID){ \
                             studentCharges : {studentCharges} \
-                            (filter: {AND:[ \
-                                {{student@persons}: {id: {EQ: $personId }}} \
-                                {{academicPeriod}:{code:{IN: $academicPeriodCodes}}} \
-                            ]}) \
+                            (filter: {student@persons}: {id: {EQ: $personId }}}) \
                             { \
                                 totalCount \
                                 edges { \
