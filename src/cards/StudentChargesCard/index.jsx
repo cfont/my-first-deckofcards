@@ -22,6 +22,7 @@ const StudentChargesCard = props => {
 
     const [studentCharges, setStudentCharges] = useState();
     const [totalCount, setTotalCount] = useState();
+    const [totalAmountOwed, setTotalAmountOwed] = useState();
 
     const getAcademicPeriods = (configuration) => {
         if (configuration && configuration.myChargesAcademicPeriod) {
@@ -50,7 +51,9 @@ const StudentChargesCard = props => {
 
             // load the student-charges
             let studentCharges = [];
-            let totalCount = '';
+            let totalCount = 0;
+            let allChargeValues = [];
+            let totalAmountOwed = 0;
 
             if (mock) {
                 // load mock data for one student for "current" academic period(s) in Banner example
@@ -64,6 +67,8 @@ const StudentChargesCard = props => {
                 console.log('ethosQuery results', studentChargesData);
                 studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges.edges..node');
                 totalCount = jsonpath.query(studentChargesData, '$..data.studentCharges.totalCount');
+                allChargeValues = jsonpath.query(studentCharges, '$..chargedAmount.amount.value');
+                totalAmountOwed = allChargeValues.reduce((total, init) => total + init );
                 console.log('jsonpath query results', studentCharges);
                 console.log('academicPeriodCode: ', configuration.myChargesAcademicPeriod);
             } else {
@@ -82,40 +87,44 @@ const StudentChargesCard = props => {
             setLoadingStatus(false);
             setStudentCharges(() => studentCharges);
             setTotalCount(() => totalCount);
+            setTotalAmountOwed(() => totalAmountOwed);
         })()
     }, [getEthosQuery, mock])
 
     return (
-        <div className={classes.card}>
-            <Typography gutterBottom>The following {totalCount} charges have been found on your account: </Typography>
-            <br />
-            <div id='My_Table' className={classes.root}>
-                <Table className={classes.table} layout={{ variant: 'card', breakpoint: 'sm' }}>
-                    <TableHead>
-                        <TableRow>
-                            <TableCell>Date</TableCell>
-                            <TableCell>Description</TableCell>
-                            <TableCell align="right">Amount ($)</TableCell>
-                        </TableRow>
-                    </TableHead>
-                    <TableBody>
-                        {studentCharges && studentCharges.map(studentCharge => (
-                            <TableRow key={studentCharge.id} hover='true'>
-                                <TableCell columnName="Date">
-                                    {moment(studentCharge.chargeableOn).calendar()}
-                                </TableCell>
-                                <TableCell columnName="Description">
-                                    {showChargeDescription(studentCharge)}
-                                </TableCell>
-                                <TableCell columnName="Amount ($)" align="right">
-                                    {studentCharge.chargedAmount.amount.value}
-                                </TableCell>
-                            </TableRow>
-                        ))}
-                    </TableBody>
-                </Table>
-            </div>
+      <div className={classes.card}>
+        <Typography gutterBottom>
+          The following {totalCount} charges have been found on your account (since the beginning of time)
+          for a total of ${totalAmountOwed} without considering financial aid.
+        </Typography>
+        <br />
+        <div id='My_Table' className={classes.root}>
+          <Table className={classes.table} layout={{ variant: 'card', breakpoint: 'sm' }}>
+            <TableHead>
+              <TableRow>
+                <TableCell>Date</TableCell>
+                <TableCell>Description</TableCell>
+                <TableCell align="right">Amount ($)</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {studentCharges && studentCharges.map(studentCharge => (
+                  <TableRow key={studentCharge.id} hover='true'>
+                    <TableCell columnName="Date">
+                      {moment(studentCharge.chargeableOn).calendar()}
+                    </TableCell>
+                    <TableCell columnName="Description">
+                      {showChargeDescription(studentCharge)}
+                    </TableCell>
+                    <TableCell columnName="Amount ($)" align="right">
+                      {studentCharge.chargedAmount.amount.value}
+                    </TableCell>
+                  </TableRow>
+                ))}
+            </TableBody>
+          </Table>
         </div>
+      </div>
     )
 }
 
