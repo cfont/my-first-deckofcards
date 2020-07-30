@@ -121,9 +121,7 @@ StudentChargesCard.propTypes = {
   data: PropTypes.object.isRequired,
   cardInfo: PropTypes.object.isRequired,
   overrideDescription: PropTypes.string,
-  fundingDestination: PropTypes.object({
-    title: PropTypes.string
-  }),
+  fundingDestination: PropTypes.object,
   mock: PropTypes.bool
 };
 
