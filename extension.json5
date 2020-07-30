@@ -27,6 +27,35 @@
                         "accountingCodes": {min: 11}
                     },
                     "query":
+                        "query getStudentCharges($personId: ID){ \
+                            studentCharges : {studentCharges} \
+                            (filter: {student@persons}: {id: {EQ: $personId }}}) \
+                            { \
+                                totalCount \
+                                edges { \
+                                    node { \
+                                        id \
+                                        chargeableOn \
+                                        chargedAmount { amount { value currency } } \
+                                        academicPeriod: {academicPeriod} { title } \
+                                        overrideDescription \
+                                        fundingDestination: {fundingDestination@accountingCodes} { title } \
+                                    } \
+                                } \
+                            } \
+                        }"
+                }
+            ],
+            "list-current-student-charges": [
+                {
+                    "resourceVersions": {
+                        "studentCharges": {min: 16},
+                        "students": {min: 12},
+                        "persons": {min:12},
+                        "academicPeriods": {min: 16},
+                        "accountingCodes": {min: 11}
+                    },
+                    "query":
                         "query getStudentCharges($personId: ID, $academicPeriodCodes: [String]){ \
                             studentCharges : {studentCharges} \
                             (filter: {AND:[ \
