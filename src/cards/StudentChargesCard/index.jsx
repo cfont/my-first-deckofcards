@@ -104,7 +104,7 @@ const StudentChargesCard = props => {
               <TableRow>
                 <TableCell>Date</TableCell>
                 <TableCell>Description</TableCell>
-                <TableCell align="right">Amount ($)</TableCell>
+                <TableCell align="right">Amount (USD)</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -116,7 +116,7 @@ const StudentChargesCard = props => {
                     <TableCell columnName="Description">
                       {showChargeDescription(studentCharge)}
                     </TableCell>
-                    <TableCell columnName="Amount ($)" align="right">
+                    <TableCell columnName="Amount (USD)" align="right">
                       {Number(studentCharge.chargedAmount.amount.value).toLocaleString('en-US',{style:'currency', currency:'USD'})}
                     </TableCell>
                   </TableRow>
