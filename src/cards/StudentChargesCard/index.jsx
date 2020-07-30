@@ -99,7 +99,8 @@ const StudentChargesCard = props => {
       <div className={classes.card}>
         <Typography gutterBottom>
           The following {totalCount} charges have been found on your account (since the beginning of time)
-          for a total of {Number(totalAmountOwed).toLocaleString('en', {style:'currency', currency:'USD'})} without considering financial aid.
+          for a total balance of {Number(totalAmountOwed).toLocaleString('en', { style: 'currency', currency: 'USD' })} without consideration
+          of any applied financial aid.
         </Typography>
         <br />
         <div id='My_Table' className={classes.root}>
