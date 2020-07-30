@@ -95,7 +95,7 @@ const StudentChargesCard = props => {
       <div className={classes.card}>
         <Typography gutterBottom>
           The following {totalCount} charges have been found on your account (since the beginning of time)
-          for a total of {Number(totalAmountOwed).toLocaleString('en-US',{style:'currency', currency:'USD'})} without considering financial aid.
+          for a total of {Number(totalAmountOwed).toLocaleString('en',{style:'currency', currency:'USD'})} without considering financial aid.
         </Typography>
         <br />
         <div id='My_Table' className={classes.root}>
@@ -117,7 +117,7 @@ const StudentChargesCard = props => {
                       {showChargeDescription(studentCharge)}
                     </TableCell>
                     <TableCell columnName="Amount (USD)" align="right">
-                      {Number(studentCharge.chargedAmount.amount.value).toLocaleString('en-US',{style:'currency', currency:'USD'})}
+                      {Number(studentCharge.chargedAmount.amount.value).toLocaleString('en',{style:'currency', currency:studentCharge.chargedAmount.amount.currency})}
                     </TableCell>
                   </TableRow>
                 ))}
