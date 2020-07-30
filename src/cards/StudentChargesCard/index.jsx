@@ -116,10 +116,15 @@ const StudentChargesCard = props => {
 }
 
 StudentChargesCard.propTypes = {
-    cardControl: PropTypes.object.isRequired,
-    classes: PropTypes.object.isRequired,
-    data: PropTypes.object.isRequired,
-    cardInfo: PropTypes.object.isRequired
+  cardControl: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
+  cardInfo: PropTypes.object.isRequired,
+  overrideDescription: PropTypes.string,
+  fundingDestination: PropTypes.object({
+    title: PropTypes.string
+  }),
+  mock: PropTypes.bool
 };
 
 const CardBody = injectIntl(StudentChargesCard);
