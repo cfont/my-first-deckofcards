@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import { injectIntl, IntlProvider } from "react-intl";
 import PropTypes from 'prop-types';
 import { withStyles } from '@hedtech/react-design-system/core/styles';
@@ -7,7 +7,7 @@ import { getMessages } from '../../i18n/intlUtility';
 import {
     Typography, Table, TableHead, TableRow, TableCell, TableBody
 } from '@hedtech/react-design-system/core';
-import { spacingSmall, widthFluid } from '@hedtech/react-design-system/core/styles/tokens';
+import { spacingSmall } from '@hedtech/react-design-system/core/styles/tokens';
 import moment from 'moment';
 
 
@@ -75,9 +75,13 @@ const StudentChargesCard = props => {
                 try {
                     console.log('academicPeriodCode: ', configuration.myChargesAcademicPeriod);
                     console.log('config getter: ', getAcademicPeriods(configuration));
-                    const studentChargesData = await getEthosQuery({ queryId: 'list-student-charges', properties: { 'academicPeriodCodes': getAcademicPeriods(configuration) } })
+                    // const studentChargesData = await getEthosQuery({ queryId: 'list-current-student-charges', properties: { 'academicPeriodCodes': getAcademicPeriods(configuration) } })
+                    const studentChargesData = await getEthosQuery({ queryId: 'list-all-student-charges' })
                     console.log('ethosQuery results', studentChargesData);
                     studentCharges = jsonpath.query(studentChargesData, '$..data.studentCharges.edges..node');
+                    totalCount = jsonpath.query(studentChargesData, '$..data.studentCharges.totalCount');
+                    allChargeValues = jsonpath.query(studentCharges, '$..chargedAmount.amount.value');
+                    totalAmountOwed = allChargeValues.reduce((total, init) => {return total + init}, 0 );
                     console.log('jsonpath query results', studentCharges);
                 } catch (error) {
                     console.log('ethosQuery failed', error);
@@ -95,7 +99,8 @@ const StudentChargesCard = props => {
       <div className={classes.card}>
         <Typography gutterBottom>
           The following {totalCount} charges have been found on your account (since the beginning of time)
-          for a total of {Number(totalAmountOwed).toLocaleString('en',{style:'currency', currency:'USD'})} without considering financial aid.
+          for a total balance of {Number(totalAmountOwed).toLocaleString('en', { style: 'currency', currency: 'USD' })} without consideration
+          of any applied financial aid.
         </Typography>
         <br />
         <div id='My_Table' className={classes.root}>
@@ -117,7 +122,7 @@ const StudentChargesCard = props => {
                       {showChargeDescription(studentCharge)}
                     </TableCell>
                     <TableCell columnName="Amount (USD)" align="right">
-                      {Number(studentCharge.chargedAmount.amount.value).toLocaleString('en',{style:'currency', currency:studentCharge.chargedAmount.amount.currency})}
+                      {Number(studentCharge.chargedAmount.amount.value).toLocaleString('en', {style:'currency', currency:studentCharge.chargedAmount.amount.currency})}
                     </TableCell>
                   </TableRow>
                 ))}
